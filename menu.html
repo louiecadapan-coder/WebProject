@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Menu - Garden Whisk Café</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="container navbar">
+    <div class="brand"><h1>Garden Whisk</h1><p>café & matcha library</p></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="bestsellers.html">Best Sellers</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="order.html">Order</a>
+      <a href="#about">About Us</a>
+
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="section-title">Our Menu 🍵</h2>
+
+  <!-- Pasta section -->
+  <section class="menu-section">
+    <h3>Pasta</h3>
+    <p class="desc">Comfort in every twirl — crafted with love and a touch of green serenity.</p>
+    <div class="menu-wrapper">
+      <!-- 10 example items -->
+      <div class="card"><img src="images/placeholders/carbonara.png" class="menu-img" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Classic Carbonara</h4>
+      <div class="price">₱230</div><p class="short">Creamy, savory, and topped with parmesan.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button><div class="more-info"><ul>
+  <li> Spaghetti pasta </li>
+  <li>Egg yolk </li>
+  <li> Bacon or pancetta</li>
+  <li> Parmesan cheese </li>
+  <li> Olive oil </li>
+  <li> Garlic </li>
+  <li> Cream (optional) </li>
+  <li> Black pepper </li>
+</ul></div></div></div>
+
+      <div class="card"><img src="images/placeholders/pesto.png" class="menu-img" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Pesto Pasta</h4>
+      <div class="price">₱250</div><p class="short">Fresh basil and nutty parmesan.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"> <ul>
+  <li>Fresh basil and nutty parmesan</li>
+  <li> Linguine pasta </li>
+  <li> Fresh basil leaves </li>
+  <li> Parmesan cheese</li>
+  <li> Pine nuts or cashews </li>
+  <li> Garlic </li>
+  <li> Olive oil </li>
+  <li> Lemon juice </li>
+  <li> Salt </li>
+</ul>
+</div></div></div>
+
+
+      <div class="card"><img src="images/placeholders/tomato.png" onclick="openLightbox(this)"><div class="card-content">
+      <h4>Tomato Basil</h4><div class="price">₱200</div><p class="short">Tangy tomato & basil blend.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"> 
+  Tangy tomato and basil blend.
+  <ul>
+  <li> Spaghetti pasta</li>
+  <li>Crushed tomatoes</li>
+  <li>Fresh basil leaves</li>
+  <li>Garlic</li>
+  <li>Onion</li>
+  <li>Olive oil</li>
+  <li>Sugar</li>
+  <li>Salt and pepper</li>
+</ul></div></div></div>
+
+<div class="card"><img src="images/placeholders/alfredo.png" onclick="openLightbox(this)"><div class="card-content">
+      <h4>Matcha Alfredo</h4><div class="price">₱270</div>
+      <p class="short">A matcha twist on a favorite.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"> <ul>
+  A matcha twist on a favorite.
+  <li>Fettuccine pasta</li>
+  <li> Butter</li>
+  <li>Cream</li>
+  <li>Parmesan cheese</li>
+  <li>Matcha powder</li>
+  <li>Garlic</li>
+  <li>Salt and pepper</li>
+</ul></div>
+    </div></div>
+
+      <div class="card"><img src="images/placeholders/aglio.png" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Aglio e Olio</h4><div class="price">₱190</div>
+      <p class="short">Always comforting.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info">
+      <ul>
+      <li>Spaghetti pasta</li>
+      <li> Olive oil</li>
+      <li>Garlic</li>
+      <li>Chili flakes</li>
+      <li>Fresh parsley</li>
+      <li>Parmesan (optional)</li>
+      <li>Salt</li>
+    </ul>
+      </div>
+    </div></div>
+
+      <div class="card"><img src="images/placeholders/marinara.png" onclick="openLightbox(this)"><div class="card-content">
+      <h4>Seafood Marinara</h4><div class="price">₱220</div><p class="short">Seafood in tangy tomato sauce.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info">Seafood in tangy tomato sauce.
+        <ul>
+ <li>Linguine pasta</li>
+ <li>Shrimp, squid, and mussels</li>
+ <li>Tomato sauce</li>
+ <li>Garlic</li>
+ <li>Onion</li>
+ <li>Olive oil</li>
+ <li>Oregano</li>
+ <li>Salt and pepper</li>
+ <li>Basil.</li>
+</ul>
+</div></div></div>
+
+      <div class="card"><img src="images/placeholders/spinach.png" onclick="openLightbox(this)"><div class="card-content">
+      <h4>Spinach & Matcha Fettuccine</h4><div class="price">₱250</div>
+      <p class="short">Soft, earthy, and creamy.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info">Soft, earthy, and creamy.
+    <ul>
+  <li> Spinach fettuccine pasta </li>
+  <li> Butter </li>
+  <li> Cream </li>
+  <li> Parmesan cheese </li>
+  <li> Fresh spinach </li>
+  <li> Matcha powder </li>
+  <li> Salt and pepper </li>
+</ul>
+</div></div></div>
+
+      <div class="card"><img src="images/placeholders/lasagna.png" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Garden Lasagna Roll</h4><div class="price">₱170</div>
+      <p class="short">Comfort in every roll.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info">Comfort in every roll.
+  <ul>
+  <li> Lasagna sheet </li>
+  <li> Ricotta cheese </li>
+  <li> Spinach </li>
+  <li> Mozzarella cheese </li>
+  <li> Parmesan cheese </li>
+  <li> Marinara sauce </li>
+  <li> Olive oil </li>
+  <li> Basil</div></div></div>
+
+      <div class="card"><img src="images/placeholders/cheese.png" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Four Cheese</h4><div class="price">₱230</div>
+      <p class="short">Cheesy comfort bowl.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info">Cheesy comfort bowl.
+    <ul>
+  <li> Penne or fettuccine pasta </li>
+  <li> Parmesan cheese </li>
+  <li> Mozzarella cheese </li>
+  <li> Cheddar cheese </li>
+  <li> Cream cheese </li>
+  <li> Butter </li>
+  <li> Cream </li>
+  <li> Salt and pepper </li>
+</ul>
+</div></div></div>
+
+      <div class="card"><img src="images/placeholders/garden.png" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Herb Garden Pasta</h4><div class="price">₱195</div>
+      <p class="short">Bright and zesty herbs.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info">Bright and zesty herbs.
+  <ul>
+  <li> Spaghetti pasta </li>
+  <li> Olive oil </li>
+  <li> Garlic </li>
+  <li>Onion </li>
+  <li> Mixed herbs (basil, thyme, oregano) </li>
+  <li> Fresh parsley </li>
+  <li> Lemon juice </li>
+  <li> Parmesan cheese </li>
+</ul>
+
+  </div></div></div>
+    </div>
+  </section>
+
+<!-- Meal section -->
+  <section class="menu-section">
+    <h3>Savory Plate</h3>
+    <p class="desc">Wholesome bites made to brighten any hour of your day.</p>
+    <div class="menu-wrapper">
+      <!-- 10 example items -->
+      <div class="card"><img src="images/placeholders/creamy.png" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Creamy Chicken Sandwich Melt</h4>
+      <div class="price">₱180</div><p class="short">Your cheesy, savory comfort melt.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button><div class="more-info">
+        <ul>
+        <li>Shredded chicken breast</li>
+        <li>Melted mozzarella & parmesan cheese</li>
+        <li>Creamy garlic-mayo sauce</li>
+        <li>Sourdough bread or ciabatta</li>
+        <li>Butter</li>
+        <li>Salt & pepper</li>
+        <li>Side: potato chips </li>
+      </ul></div></div></div>
+
+      <div class="card"><img src="images/placeholders/avocado.png" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Avocado Egg Toast </h4>
+      <div class="price">₱190</div><p class="short">The perfect start. Rich avocado, runny egg.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"> <ul>
+        <li>Fresh avocado</li>
+        <li>Poached egg</li>
+        <li>Basil leaves</li>
+        <li>Parmesan cheese</li>
+        <li>Whole-grain toast</li>
+        <li>Olive oil drizzle</li>
+        <li>Lemon juice & salt</li>
+      </ul></div></div></div>
+
+      <div class="card"><img src="images/placeholders/grilled.png" onclick="openLightbox(this)">
+      <div class="card-content">
+      <h4>Grilled Lemon Butter Fish</h4><div class="price">₱210</div>
+      <p class="short">Fresh catch! Light, lemony, and delicious.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"><ul>
+        <li>White fish fillet</li>
+        <li>Lemon butter sauce</li>
+        <li>Fresh herbs (parsley, basil)</li>
+        <li>Olive oil</li>
+        <li>Garlic</li>
+        <li>Side: mixed greens or roasted veggies</li>
+      </ul></div></div></div>
+
+      <div class="card"><img src="images/placeholders/pancakes.png" onclick="openLightbox(this)"><div class="card-content">
+      <h4>Pancakes</h4><div class="price">₱175</div><p class="short">Sweet bliss. A perfectly fluffy pancake stack.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"><ul>
+        <li>All-purpose flour</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Butter</li>
+        <li>Baking powder</li>
+        <li>Sugar & salt</li>
+        <li>Topping: maple syrup, whipped cream, basil or fruit compote</li>
+      </ul></div></div></div>
+
+
+      <div class="card"><img src="images/placeholders/bacon.png" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Bacon</h4><div class="price">₱185</div>
+      <p class="short">The classic crave. Crispy bacon, eggs & toast.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"><ul>
+        <li>Crispy bacon strips</li>
+        <li>Scrambled eggs or sunny-side-up</li>
+        <li>Pancakes or toast on the side</li>
+        <li>Butter</li>
+        <li>Maple syrup or jam</li>
+      </ul>
+   </div>
+    </div></div>
+
+      <div class="card"><img src="images/placeholders/salad1.png" onclick="openLightbox(this)"><div class="card-content">
+      <h4>Chicken Caesar Salad</h4><div class="price">₱190</div><p class="short">Hail, Caesar! A timeless, bold salad.</p>
+      <button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"> <ul>
+        <li>Romaine lettuce</li>
+        <li>Grilled chicken breast</li>
+        <li>Caesar dressing</li>
+        <li>Croutons</li>
+        <li>Parmesan cheese</li>
+        <li>Olive oil & lemon juice</li>
+      </ul></div></div></div>
+
+      <div class="card"><img src="images/placeholders/salad2.png"onclick="openLightbox(this)"><div class="card-content">
+      <h4>Spinach & Citrus Salad</h4><div class="price">₱135</div>
+      <p class="short">Sunshine in a bowl. Bright, zesty, and fresh..</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"><ul>
+        <li>Baby spinach</li>
+        <li>Orange or grapefruit slices</li>
+        <li>Feta cheese</li>
+        <li>Walnuts or almonds</li>
+        <li>Honey vinaigrette</li>
+        <li>Olive oil</li>
+      </ul></div></div></div>
+
+      <div class="card"><img src="images/placeholders/salad3.png" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Garden Whisk Salad</h4><div class="price">₱135</div>
+      <p class="short">Crisp greens in our signature dressing.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"><ul>
+        <li>Mixed greens (lettuce, arugula, kale)</li>
+        <li>Cherry tomatoes</li>
+        <li>Cucumber slices</li>
+        <li>Carrots</li>
+        <li>House vinaigrette dressing</li>
+        <li>Optional: hard-boiled egg or nuts</li>
+      </ul></div></div></div>
+
+      <div class="card"><img src="images/placeholders/pizza2.jpg" onclick="openLightbox(this)">
+      <div class="card-content"><h4>Special Pesto Pizza</h4><div class="price">₱320</div>
+      <p class="short">Velvety spinach and melted cheese.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"><ul>
+      <li>Fresh basil pesto sauce</li>
+      <li>Mozzarella cheese</li>
+      <li>Cherry tomatoes</li>
+      <li>Olive oil</li>
+      <li>Parmesan cheese</li>
+      <li>Thin pizza crust</li>
+      <li>Garlic</li>
+    </ul></div></div></div>
+
+      <div class="card"><img src="images/placeholders/pizza1.jpg" onclick="openLightbox(this)">
+      <div class="card-content"><h4> Special Spinach Pizza</h4><div class="price">₱320</div>
+      <p class="short">Velvety spinach and melted cheese.</p><button class="view-details" onclick="toggleInfo(this)">View details</button>
+      <div class="more-info"> <ul>
+      <li>Sautéed spinach</li>
+      <li>Mozzarella & feta cheese</li>
+      <li>Garlic cream sauce</li>
+      <li>Olive oil</li>
+      <li>Red onions</li>
+      <li>Thin pizza crust</li>
+      <li>Crushed black pepper</li>
+    </ul></div></div></div>
+    </div>
+  </section>
+
+<!-- Drinks section -->
+<section class="menu-section">
+  <h3>Drinks & Beverages</h3>
+  <p class="desc">Sip, savor, and stay awhile — from bold brews to gentle refreshers.</p>
+
+  <div class="menu-wrapper">
+
+    <div class="card">
+      <img src="images/placeholders/dirty-matcha-latte-1.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Dirty Matcha Latte</h4>
+        <div class="price">₱125</div>
+        <p class="short">Bold espresso meets earthy matcha harmony.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">A perfect fusion of strong espresso and smooth matcha milk — creamy, bittersweet, and energizing in one sip.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/icedstrawberrymatcha.png" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Iced Strawberry Matcha</h4>
+        <div class="price">₱125</div>
+        <p class="short">Sweet strawberries meet mellow green tea.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Layered matcha latte with strawberry purée and milk — a visual treat with fruity sweetness and earthy balance.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/colddirtymatcha.png" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Cold Dirty Matcha</h4>
+        <div class="price">₱130</div>
+        <p class="short">Iced matcha latte kissed with espresso.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Cold brew espresso poured over chilled matcha milk for a smooth, rich contrast that wakes the senses.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/coldmatchalatte.png" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Cold Matcha Latte</h4>
+        <div class="price">₱125</div>
+        <p class="short">Smooth, creamy, and gently refreshing.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Premium matcha whisked into cold milk and ice — a balanced, soothing pick-me-up for any time of day.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/matchadrinkwithmatchamisu.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Matchamisu</h4>
+        <div class="price">₱150</div>
+        <p class="short">Tiramisu-inspired matcha indulgence.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">A dessert drink inspired by tiramisu — layers of matcha cream, espresso milk, and cocoa dust for a cozy, sweet finish.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/spanishlatte.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Iced Spanish Latte</h4>
+        <div class="price">₱130</div>
+        <p class="short">Sweet, smooth, and perfectly balanced.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">A blend of espresso, cold milk, and a touch of condensed milk for a creamy sweetness that lingers.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/caramelmachiatto.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Caramel Macchiato</h4>
+        <div class="price">₱150</div>
+        <p class="short">Sweet caramel swirls in creamy espresso.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Espresso layered with steamed milk, vanilla, and caramel drizzle — the perfect cozy treat.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/hazelnut.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Hazelnut Latte</h4>
+        <div class="price">₱170</div>
+        <p class="short">Nutty warmth in every sip.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Silky espresso with hazelnut syrup and creamy milk — smooth, aromatic, and comforting.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/vanilla.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Vanilla Latte</h4>
+        <div class="price">₱230</div>
+        <p class="short">Soft, aromatic, and delicately sweet.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Classic espresso blended with vanilla syrup and steamed milk — elegant simplicity in a cup.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/capuccino.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Cappuccino</h4>
+        <div class="price">₱195</div>
+        <p class="short">Rich espresso topped with airy froth.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">A balanced blend of espresso, steamed milk, and foam — simple, bold, and timeless.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Dessert section -->
+<section class="menu-section">
+  <h3>Desserts & Pastries</h3>
+  <p class="desc">Sweet little comforts baked with care for your softest moments</p>
+
+  <div class="menu-wrapper">
+
+    <div class="card">
+      <img src="images/placeholders/cinnamon.png" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Cinnamon Roll</h4>
+        <div class="price">₱180</div>
+        <p class="short">Soft, buttery swirls with a warm cinnamon hug.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Freshly baked roll topped with creamy glaze and a sprinkle of brown sugar cinnamon.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/croissant.png" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Butter Croissant</h4>
+        <div class="price">₱190</div>
+        <p class="short">Flaky, golden layers that melt in your mouth.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Classic French pastry baked to perfection with rich butter and a crisp, airy texture.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/almond.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Almond Croissant</h4>
+        <div class="price">₱210</div>
+        <p class="short">Sweet, nutty, and perfectly delicate.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Filled with almond cream, topped with sliced almonds and a light dusting of sugar.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/cake.png" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Chocolate Fudge Cake</h4>
+        <div class="price">₱175</div>
+        <p class="short">Decadent, rich, and irresistibly smooth.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Moist chocolate sponge layered with creamy fudge frosting and dark chocolate ganache.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/strawberry.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Strawberry Shortcake</h4>
+        <div class="price">₱185</div>
+        <p class="short">Light, fruity, and delightfully sweet.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Fluffy vanilla sponge with layers of whipped cream and fresh strawberries.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/Crème Brûlée.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Crème Brûlée</h4>
+        <div class="price">₱220</div>
+        <p class="short">Silky custard beneath a caramelized crisp top.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Vanilla bean custard with a perfectly torched sugar crust for that satisfying crack.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/tiramisu.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Classic Tiramisu</h4>
+        <div class="price">₱250</div>
+        <p class="short">Coffee-kissed layers of cream and cocoa.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Espresso-soaked ladyfingers layered with mascarpone cream and dusted with cocoa powder.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/Banoffee Tart.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Banoffee Tart</h4>
+        <div class="price">₱170</div>
+        <p class="short">Sweet banana and toffee in buttery perfection.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Graham crust filled with caramel, fresh bananas, and whipped cream topping.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/lecheflan.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Creamy Leche Flan</h4>
+        <div class="price">₱230</div>
+        <p class="short">Golden, smooth, and perfectly sweet.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Rich caramel custard steamed to a silky texture, a Filipino favorite dessert.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/blueberry.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Blueberry Cheesecake</h4>
+        <div class="price">₱195</div>
+        <p class="short">Tangy, creamy, and berry-sweet.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Classic cheesecake topped with luscious blueberry compote on a buttery graham crust.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- More matcha section -->
+<section class="menu-section">
+  <h3>Matcha Special</h3>
+  <p class="desc">Taste calm, breathe green — our signature matcha line.</p>
+
+  <div class="menu-wrapper">
+
+    <div class="card">
+      <img src="images/placeholders/brownies.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Matcha Brownie Bites</h4>
+        <div class="price">₱180</div>
+        <p class="short">Fudgy bites with a mellow matcha kick.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Dense, chewy brownie squares infused with premium matcha and white chocolate chunks for a bittersweet balance.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/soufflé pancake.jpg" onclick="openLightbox(this)">
+      <div class="card-content">
+        <h4>Matcha Soufflé Pancake</h4>
+        <div class="price">₱210</div>
+        <p class="short">Fluffy clouds kissed with matcha sweetness.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Japanese-style pancakes, airy and soft, dusted with matcha powder and drizzled with whipped cream and syrup.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/crepe.png">
+      <div class="card-content">
+        <h4>Matcha Crepe Cake</h4>
+        <div class="price">₱175</div>
+        <p class="short">Layers of calm in every green slice.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Delicate crepe layers stacked with matcha-infused cream, creating a light yet rich dessert experience.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/pudding.jpg">
+      <div class="card-content">
+        <h4>Matcha Milk Pudding</h4>
+        <div class="price">₱185</div>
+        <p class="short">Silky smooth with a hint of earthy green tea.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Soft custard pudding infused with matcha milk, topped with cream and matcha drizzle for a comforting finish.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/donuts.jpg">
+      <div class="card-content">
+        <h4>Matcha Donuts</h4>
+        <div class="price">₱220</div>
+        <p class="short">Soft rings of joy glazed in green tea bliss.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Fluffy donuts coated with matcha glaze and a touch of white chocolate drizzle for a sweet-earthy combo.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/matcha.jpg">
+      <div class="card-content">
+        <h4>Matcha-Glazed Croissant with White Chocolate</h4>
+        <div class="price">₱250</div>
+        <p class="short">Flaky layers, mellow matcha, creamy white chocolate.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Crisp butter croissant brushed with matcha glaze and finished with melted white chocolate drizzle.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/parfait.png">
+      <div class="card-content">
+        <h4>Matcha Deluxe Parfait</h4>
+        <div class="price">₱170</div>
+        <p class="short">Layers of green delight in every spoonful.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">A tall glass layered with matcha jelly, whipped cream, red beans, mochi, and a drizzle of matcha syrup.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/sundae.jpg">
+      <div class="card-content">
+        <h4>Matcha Mint Ice Cream</h4>
+        <div class="price">₱190</div>
+        <p class="short">Cool mint meets smooth matcha harmony.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">Refreshing mint ice cream blended with matcha powder and topped with chocolate flakes for contrast.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/shake.jpg">
+      <div class="card-content">
+        <h4>Matcha Shake</h4>
+        <div class="price">₱230</div>
+        <p class="short">Creamy, chilled, and blissfully green.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">A creamy blend of premium matcha, milk, and vanilla ice cream, topped with whipped cream and a dust of matcha powder.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/placeholders/macarons.jpg">
+      <div class="card-content">
+        <h4>Uji Matcha Macaron</h4>
+        <div class="price">₱195</div>
+        <p class="short">Crisp shells, creamy matcha heart.</p>
+        <button class="view-details" onclick="toggleInfo(this)">View details</button>
+        <div class="more-info">French almond macarons filled with smooth Uji matcha ganache, a perfect bite of sweet and earthy tones.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+<script>
+function toggleInfo(btn){
+  const info = btn.nextElementSibling;
+  const expanded = info.style.display === "block";
+  info.style.display = expanded ? "none" : "block";
+  btn.textContent = expanded ? "View details" : "Hide details";
+}
+<script>
+function openLightbox(img) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  lightbox.style.display = "block";
+  lightboxImg.src = img.src;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</script>
+
+<!-- Image Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="">
+</div>
+<script src="js/main.js"></script>
+
+
+
+  <script src="js/main.js"></script>
+  <footer class="footer">
+  <div class="footer-ribbon"></div>
+  <div class="footer-content">
+    <p class="footer-title">Stay connected with Garden Whisk Café</p>
+    <div class="social-icons">
+      <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p class="footer-note">Serving warmth, matcha, and memories — one cup at a time.</p>
+    <p class="copyright">© 2025 Garden Whisk Café. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>
+function toggleInfo(button) {
+  const info = button.nextElementSibling;
+  if (!info) return;
+
+  // Toggle the visibility
+  if (info.style.display === "block") {
+    info.style.display = "none";
+    button.textContent = "View details";
+  } else {
+    info.style.display = "block";
+    button.textContent = "Hide details";
+  }
+}
+
+function openLightbox(img) {
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = "0";
+  overlay.style.left = "0";
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.background = "rgba(0,0,0,0.8)";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.zIndex = "9999";
+
+  const clone = img.cloneNode();
+  clone.style.maxWidth = "90%";
+  clone.style.maxHeight = "90%";
+  clone.style.borderRadius = "10px";
+  overlay.appendChild(clone);
+
+  overlay.addEventListener("click", () => overlay.remove());
+  document.body.appendChild(overlay);
+}
+
+</script>
+
+</body>
+</html>

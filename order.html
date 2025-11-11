@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Order - Garden Whisk Café</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <div class="brand">
+        <h1>Garden Whisk</h1>
+        <p>café & matcha library</p>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="bestsellers.html">Best Sellers</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservation.html">Reservation</a>
+    
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Order Now</h2>
+    <p style="text-align:center;color:#455b49;margin-bottom:12px">
+      Add items to your cart and proceed to checkout.
+    </p>
+
+    <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start">
+      <div>
+        <div class="cards">
+
+          <!-- Menu Items -->
+          <div class="card">
+            <img src="images/placeholders/alfredo.png" alt="menu1">
+            <h3>Matcha Alfredo</h3>
+            <p>₱270</p>
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(1, 'Matcha Alfredo', 270)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/marinara.png" alt="menu2">
+            <h3>Seafood Marinara</h3>
+            <p>₱220</p>
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(2, 'Seafood Marinara', 220)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/lasagna.png" alt="menu3">
+            <h3>Garden Lasagna</h3>
+            <p>₱170</p>
+
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(3, 'Garden Lasagna', 170)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/garden.png" alt="menu4">
+            <h3>Herb Garden Pasta</h3>
+            <p>₱195</p>
+           
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(4, 'Herb Garden Pasta', 195)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/grilled.png" alt="menu5">
+            <h3>Grilled Lemon Butter Fish</h3>
+            <p>₱210</p>
+         
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(5, 'Grilled Lemon Butter Fish', 210)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/avocado.png" alt="menu6">
+            <h3>Avocado Egg Toast</h3>
+            <p>₱190</p>
+          
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(6, 'Avocado Egg Toast', 190)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/salad2.png" alt="menu7">
+            <h3>Spinach & Citrus Salad</h3>
+            <p>₱135</p>
+         
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(7, 'Spinach & Citrus Salad', 135)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/salad3.png" alt="menu8">
+            <h3>Garden Whisk Salad</h3>
+            <p>₱135</p>
+         
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(8, 'Garden Whisk Salad', 135)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/dirty-matcha-latte-1.jpg" alt="menu9">
+            <h3>Dirty Matcha Latte </h3>
+            <p>₱125</p>
+          
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(9, 'Dirty Matcha Latte', 125)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/placeholders/matchadrinkwithmatchamisu.jpg" alt="menu10">
+            <h3>Matchamisu</h3>
+            <p>₱150</p>
+         
+            <div style="margin-top:10px">
+              <button class="btn" onclick="addToCart(10, 'Matchamisu', 150)">Add to Order</button>
+            </div>
+          </div>
+
+          <div class="card">
+        <img src="images/placeholders/strawberry.jpg" alt="menu11">
+       <h3>Strawberry Shortcakee</h3>
+        <p>₱185</p>
+    
+        <div style="margin-top:10px">
+          <button class="btn" onclick="addToCart(11, 'Strawberry Shortcake', 185)">Add to Order</button>
+  </div>
+</div>
+
+          <div class="card">
+        <img src="images/placeholders/Crème Brûlée.jpg" alt="menu11">
+       <h3>Crème Brûlée</h3>
+      <p>₱220</p>
+      <div style="margin-top:10px">
+          <button class="btn" onclick="addToCart(11, 'Crème Brûlée', 220)">Add to Order</button>
+  </div>
+</div>
+
+  <div class="card">
+        <img src="images/placeholders/crepe.png" alt="menu11">
+       <h3>Matcha Crepe Cake</h3>
+        <p>₱175</p>
+      
+        <div style="margin-top:10px">
+          <button class="btn" onclick="addToCart(11, 'New Dish Name', 175)">Add to Order</button>
+  </div>
+</div>
+
+  <div class="card">
+        <img src="images/placeholders/lecheflan.jpg" alt="menu11">
+       <h3>Creamy Leche Flan</h3>
+        <p>₱230</p>
+      
+        <div style="margin-top:10px">
+          <button class="btn" onclick="addToCart(11, 'Creamy Leche Flan', 230)">Add to Order</button>
+  </div>
+</div>
+
+
+  <div class="card">
+        <img src="images/placeholders/parfait.png" alt="menu11">
+       <h3>Matcha Deluxe Parfait</h3>
+        <p>₱170</p>
+              <div style="margin-top:10px">
+          <button class="btn" onclick="addToCart(11, 'Matcha Deluxe Parfait', 170)">Add to Order</button>
+  </div>
+</div>
+          <!-- End of Menu Items -->
+
+        </div>
+      </div>
+
+      <aside>
+        <div class="order-side">
+         
+<section id="order">
+  <h2>Your Order:</h2>
+
+
+
+          <div id="cart-items"></div>
+
+          <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+            <strong>Total</strong>
+            <div id="cart-total">₱0</div>
+          </div>
+<div style="margin-top:8px; text-align:right">
+  <button class="btn" type="button" onclick="clearCart()" style="background:#c96b6b">Clear All</button>
+</div>
+</section>
+        <form id="checkout-form" onsubmit="event.preventDefault(); proceedCheckout();">
+  <input type="text" id="name" placeholder="Full name" required>
+  <input type="text" id="contact" placeholder="Contact number" required>
+  <input type="text" id="address" placeholder="Delivery address / Landmark" required>
+  <select id="payment">
+    <option value="Cash on Delivery">Cash on delivery</option>
+    <option value="GCash">GCash</option><br>
+  </select>
+  <br><button type="submit" id="confirmBtn">Confirm Order</button>
+</form>
+
+
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </aside>
+
+  </main>
+<script>
+  
+  
+  // 🧾 Load selected item from Best Sellers (if any)
+document.addEventListener("DOMContentLoaded", () => {
+  const selectedItem = JSON.parse(localStorage.getItem("selectedItem"));
+  if (selectedItem) {
+    // Add to the cart
+    cart.push({
+      id: Date.now(),
+      name: selectedItem.name,
+      price: parseFloat(selectedItem.price)
+    });
+
+    // Update cart display
+    updateCart();
+
+    // Clear localStorage so it doesn't keep re-adding next time
+    localStorage.removeItem("selectedItem");
+  }
+});
+
+</script>
+
+
+<script src="js/main.js"></script>
+<script src="js/order.js"></script>
+
+
+
+  <script src="js/main.js"></script>
+  <footer class="footer">
+  <div class="footer-ribbon"></div>
+  <div class="footer-content">
+    <p class="footer-title">Stay connected with Garden Whisk Café</p>
+    <div class="social-icons">
+      <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p class="footer-note">Serving warmth, matcha, and memories — one cup at a time.</p>
+    <p class="copyright">© 2025 Garden Whisk Café. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</body>
+</html>
+
+

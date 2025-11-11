@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Best Sellers - Garden Whisk Café</title>
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+  <header class="header"><div class="container navbar"><div class="brand"><h1>Garden Whisk</h1><p>café & matcha library</p></div>
+  <nav class="nav-links"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="reservation.html">Reservation</a><a href="order.html">Order Now</a></nav></div></header>
+  <main class="container">
+    <h2 class="section-title">Best Sellers & Promos</h2>
+    <p style="text-align:center;color:#465b4a;margin-bottom:12px">Our top picks — recommended by the Garden Whisk family.</p>
+    <div class="cards">
+
+      <div class="card">
+        <img src="images\placeholders\bestseller1.jpg" alt="best1">
+        <h3>The Whisk Classic</h3>
+        <p class="price">₱440 • ★★★★★</p>
+        <p style="margin-top:8px">Café Latte, Cheesy Croissant, Original Pasta</p>
+        <div style="margin-top:10px"><button class="btn order-btn" data-name="The Whisk Classic" data-price="440"> Order</button></div>
+      </div>
+
+      <div class="card">
+        <img src="images\placeholders\bestseller2.jpg" alt="best2">
+        <h3>The Green Oasis</h3>
+        <p class="price">₱470 • ★★★★</p>
+        <p style="margin-top:8px">Matcha Latte, Leche Flan, Pesto Pasta</p>
+        <div style="margin-top:10px"><button class="btn order-btn" data-name="The  Green Oasis" data-price="470"> Order</button></div>
+      </div>
+
+      <div class="card">
+        <img src="images\placeholders\bestseller3.jpg" alt="best3">
+        <h3>The Tiramisu Bloom</h3>
+        <p class="price">₱495 • ★★★★★</p>
+        <p style="margin-top:8px">Matchamisu, Tiramisu Cake, Italian Pasta</p>
+        <div style="margin-top:10px"><button class="btn order-btn" data-name="The Tiramisu Bloom" data-price="495"> Order</button></div>
+      </div>
+
+      <div class="card">
+        <img src="images\placeholders\bestseller4.jpg" alt="best4">
+        <h3>The Dirty Garden</h3>
+        <p class="price">₱505 • ★★★★</p>
+        <p style="margin-top:8px">Dirty Matcha Latte, Strawberry Cheesecake, Tomato Pasta</p>
+        <div style="margin-top:10px"><button class="btn order-btn" data-name="The Dirty garden" data-price="505"> Order</button></div>
+      </div>
+
+      <div class="card">
+        <img src="images\placeholders\bestseller5.jpg" alt="best5">
+        <h3>The Strawberry Patch</h3>
+        <p class="price">₱505 • ★★★★★</p>
+        <p style="margin-top:8px">Strawberry Matcha, Blueberry Cheesecake, Original Pasta</p>
+        <div style="margin-top:10px"><button class="btn order-btn" data-name="The Strawberry Patch" data-price="505"> Order</button></div>
+      </div>
+
+      <div class="card">
+        <img src="images\placeholders\bestseller6.jpg" alt="best6">
+        <h3> The Pesto Power Up</h3>
+        <p class="price">₱525 • ★★★★</p>
+        <p style="margin-top:8px"> Coffee Matcha, Cheesy Croissant, Pesto Pizza (Slice)</p>
+        <div style="margin-top:10px"><button class="btn order-btn" data-name="The Pesto Power" data-price="525"> Order</button></div>
+      </div>
+
+      <div class="card">
+        <img src="images\placeholders\bestseller7.jpg" alt="best7">
+        <h3>The Berry Bliss</h3>
+        <p class="price">₱545 • ★★★★★</p>
+        <p style="margin-top:8px">Café Latte, Blueberry Cheesecake, Italian Pasta</p>
+        <div style="margin-top:10px"><button class="btn order-btn" data-name="The Berry Bliss" data-price="545"> Order</button></div>
+      </div>
+
+      <div class="card">
+        <img src="images\placeholders\bestseller8.jpg" alt="best8">
+        <h3>The Spinach Serenity</h3>
+        <p class="price">₱520 • ★★★★</p>
+        <p style="margin-top:8px">Matcha Latte, Leche Flan, Spinach Pizza (Slice)</p>
+        <div style="margin-top:10px"><button class="btn order-btn" data-name="The Spinach Serenity" data-price="520"> Order</button></div>
+      </div>
+
+    </div>
+<script>
+  document.querySelectorAll('.order-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const name = button.getAttribute('data-name');
+      const price = button.getAttribute('data-price');
+
+      // Save the item in localStorage (so it persists when switching pages)
+      localStorage.setItem('selectedItem', JSON.stringify({ name, price }));
+
+      // Redirect to the order page
+      window.location.href = 'order.html';
+    });
+  });
+</script>
+
+
+
+  <script src="js/main.js"></script>
+  <footer class="footer">
+  <div class="footer-ribbon"></div>
+  <div class="footer-content">
+    <p class="footer-title">Stay connected with Garden Whisk Café</p>
+    <div class="social-icons">
+      <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank" title="Tiktok"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p class="footer-note">Serving warmth, matcha, and memories — one cup at a time.</p>
+    <p class="copyright">© 2025 Garden Whisk Café. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  </main>
+  <script src="js/main.js"></script>
+</body></html>
