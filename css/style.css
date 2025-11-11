@@ -1,6 +1,40 @@
 
 /* Garden Whisk Café - style.css */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap');
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+/* For tablets and smaller */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  flex: 1 1 300px; /* grows, shrinks, minimum width 300px */
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  .hero-image {
+    display: none;
+  }
+}
 
 :root{
   --matcha:#A8C686;
